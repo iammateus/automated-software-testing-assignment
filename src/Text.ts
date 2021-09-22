@@ -1,4 +1,4 @@
-export default class Palindrome {
+export default class Text {
     text: string;
 
     constructor(text: string) {
