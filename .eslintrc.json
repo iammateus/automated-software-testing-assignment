@@ -15,7 +15,6 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "json-format"
     ],
     "rules": {
         "indent": ["error", 4],
