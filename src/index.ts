@@ -4,5 +4,5 @@ const keepAlive = () => {
     }, 100000);
 };
 
-console.log("Hi there, I'll keep running until you close me, try ctrl+c or kill the proccess");
+console.log("Hi there, I'll keep running until you close me, try ctrl+c or killing the proccess");
 keepAlive();
