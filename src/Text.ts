@@ -5,7 +5,7 @@ export default class Text {
         this.body = body;
     }
 
-    isPalindrome(): boolean {
+    public isPalindrome(): boolean {
         const clearBody = Text.clean(this.body);
 
         const firstHalf = Text.getFirstHalf(clearBody);
@@ -16,9 +16,9 @@ export default class Text {
     }
 
     private static clean(text: string): string {
-        let result: string = text.toLowerCase();
-        result = result.replace(/[^0-9a-z]/gi, '');
-        return result;
+        const result = text.toLowerCase();
+        const cleanAllSpacesAndNonAlphanumericCharsRegex = /[^0-9a-z]/gi;
+        return result.replace(cleanAllSpacesAndNonAlphanumericCharsRegex, '');
     }
 
     private static getFirstHalf(text: string): string {
