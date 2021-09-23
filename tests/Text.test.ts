@@ -64,8 +64,38 @@ describe('Text.isPalindrome', () => {
         expect(text.isPalindrome()).toBe(true);
     });
 
-    it('should return true when text is palindrome (02/02/2020!)', () => {
+    it('should return true when text is palindrome (02/02/2020)', () => {
         const text = new Text('02/02/2020');
         expect(text.isPalindrome()).toBe(true);
+    });
+
+    it('should return true when text is palindrome (xyz)', () => {
+        const text = new Text('xyz');
+        expect(text.isPalindrome()).toBe(false);
+    });
+
+    it('should return true when text is palindrome (elephant)', () => {
+        const text = new Text('elephant');
+        expect(text.isPalindrome()).toBe(false);
+    });
+
+    it('should return true when text is palindrome (Country)', () => {
+        const text = new Text('Country');
+        expect(text.isPalindrome()).toBe(false);
+    });
+
+    it('should return true when text is palindrome (Top . post!)', () => {
+        const text = new Text('Top . post!');
+        expect(text.isPalindrome()).toBe(false);
+    });
+
+    it('should return true when text is palindrome (Wonderful-fool)', () => {
+        const text = new Text('Wonderful-fool');
+        expect(text.isPalindrome()).toBe(false);
+    });
+
+    it('should return true when text is palindrome (Wild imagination!)', () => {
+        const text = new Text('Wild imagination!');
+        expect(text.isPalindrome()).toBe(false);
     });
 });
