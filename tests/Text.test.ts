@@ -8,14 +8,14 @@ describe('Text', () => {
     });
 
     it('should instanciate with a string argument', () => {
-        const text: Text = new Text(faker.lorem.word());
+        const text = new Text(faker.lorem.word());
         expect(text).toBeInstanceOf(Text);
     });
 });
 
 describe('Text.isPalindrome', () => {
     it('should exist as a function', () => {
-        const text: Text = new Text(faker.lorem.word());
+        const text = new Text(faker.lorem.word());
         expect(text.isPalindrome).toBeInstanceOf(Function);
     });
 
