@@ -15,7 +15,6 @@ export default class Text {
         const secondHalf = clearBody.substr(middle + remainder, middle);
         const invertedSecondHalf = secondHalf.split('').reverse().join('');
 
-        console.log({ firstHalf, invertedSecondHalf });
         return firstHalf === invertedSecondHalf;
     }
 
