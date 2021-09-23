@@ -8,12 +8,9 @@ export default class Text {
     isPalindrome(): boolean {
         const clearBody = Text.clean(this.body);
 
-        const middle = Math.floor(clearBody.length / 2);
-        const remainder = clearBody.length % 2;
-
-        const firstHalf = clearBody.substr(0, middle);
-        const secondHalf = clearBody.substr(middle + remainder, middle);
-        const invertedSecondHalf = secondHalf.split('').reverse().join('');
+        const firstHalf = Text.getFirstHalf(clearBody);
+        const secondHalf = Text.getSecondHalf(clearBody);
+        const invertedSecondHalf = Text.invert(secondHalf);
 
         return firstHalf === invertedSecondHalf;
     }
@@ -22,5 +19,20 @@ export default class Text {
         let result: string = text.toLowerCase();
         result = result.replace(/[^0-9a-z]/gi, '');
         return result;
+    }
+
+    private static getFirstHalf(text: string): string {
+        const middle = Math.floor(text.length / 2);
+        return text.substr(0, middle);
+    }
+
+    private static getSecondHalf(text: string): string {
+        const middle = Math.floor(text.length / 2);
+        const remainder = text.length % 2;
+        return text.substr(middle + remainder, middle);
+    }
+
+    private static invert(text: string): string {
+        return text.split('').reverse().join('');
     }
 }
