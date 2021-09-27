@@ -11,6 +11,14 @@ An solution from an automated software testing assignment
 $ docker-compose up
 ```
 
+## How to check if text is palindrome
+
+```
+  const Text = require("src/Text");
+  const text = new Text("bob");
+  console.log(text.isPalindrome()); // Logs true
+```
+
 ## How to run the tests
 
 ```
