@@ -29,4 +29,4 @@ $ docker exec -it automated-software-testing-assignment_server_1 sh
 $ yarn test
 ```
 # License
-[MIT](https://github.com/iammateus/automated-software-testing-assignment/blob/main/README.md)
+[MIT](https://github.com/iammateus/automated-software-testing-assignment/blob/main/LICENSE)
