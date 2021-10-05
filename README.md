@@ -1,5 +1,5 @@
 # Automated Software Testing Assignment
-An solution from an automated software testing assignment
+A solution from an automated software testing assignment.
 
 ## Requeriments
 
@@ -11,7 +11,7 @@ An solution from an automated software testing assignment
 $ docker-compose up
 ```
 
-## How to check if text is palindrome
+## How to check if a text is palindrome
 
 ```
   const Text = require("src/Text");
@@ -28,5 +28,6 @@ $ docker exec -it automated-software-testing-assignment_server_1 sh
 # Run tests
 $ yarn test
 ```
+
 # License
 [MIT](https://github.com/iammateus/automated-software-testing-assignment/blob/main/LICENSE)
